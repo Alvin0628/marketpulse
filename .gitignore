@@ -1,0 +1,23 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# secrets & local state
+.env
+.browser_profile/
+
+# local data (raw dumps, probes) - real data lives in Postgres/MinIO/S3
+data/*
+!data/.gitkeep
+data/probe/*
+!data/probe/.gitkeep
+
+# misc
+.DS_Store
+.idea/
+.vscode/
